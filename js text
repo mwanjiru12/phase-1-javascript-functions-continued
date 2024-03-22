@@ -1,5 +1,0 @@
-let mondayWork = function(activity = "go to the office.") {
-    return function (activity = "work from home." ) {
-        return `This Monday, I will ${activity}.` 
-    }
-}

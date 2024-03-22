@@ -1,21 +1,17 @@
-// code your solution here
-// Implement a function called saturdayFun.
-// It should return a String like "This Saturday, I want to ....!" 
-//Fill in the ... with the activity that's passed in as the first parameter. 
-//If nothing is passed in, default to "roller-skate". Run npm test to verify you've gotten the first set of tests passing before continuing with the lesson.
-function saturdayFun(activity = "roller-skate") {
-    return `This Saturday, I want to ${activity}!`
+//here i have defined a function called saturday fun and when 
+//it is invoked its gonna return a statement with the argument 
+//used to invoke the function
+function saturdayFun(activity="roller-skate") {
+return `This Saturday, I want to ${activity}!`
 }
-
-//Implement a function expression called mondayWork. 
-//The function should return a String like "This Monday, I will ... ." 
-//Fill in the ... with the activity that's passed in as the first parameter. 
-//If nothing is passed in, default to "go to the office". 
-let mondayWork = function(activity="go to the office") {
-    return `This Monday, I will ${activity}.`
-  }
-let wrapAdjective = function(style="*"){
-    return function(adjective="special"){
-        return `You are ${style}${adjective}${style}!`
-    }   
+const mondayWork = function(goingTo="go to the office") {
+    return `This Monday, I will ${goingTo}.`
+}
+//here i have defined a parent function WrapAdjective with a child function 
+//so if its called wrapAdjective(<text>)= it gives the default string of the child function 
+//and if its called wrapAdjective(<text>)(<text>) = it gives a custom string of the child function
+const wrapAdjective = function(param1="*"){
+    return function(adj="special") {
+    return `You are ${param1}${adj}${param1}!` 
+    }
 }
